@@ -68,10 +68,12 @@ export default class CASCClient {
 
     public preload?: ClientPreloadData;
 
-    static async getProductVersion(region: string, product: string): Promise<Version | undefined> {
+    static async getProductVersion(region: string, product: string): Promise<Version> {
         const versionsText = await getProductVersions(region, product);
         const versions = parseProductVersions(versionsText);
-        return versions.find((version) => version.Region === region);
+        //return versions.find((version) => version.Region === region);
+        const version = versions.find((version) => version.Region === region);
+        return version ?? versions[0];
     }
 
     public static LocaleFlags = LocaleFlags;
