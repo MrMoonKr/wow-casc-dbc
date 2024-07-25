@@ -1,0 +1,103 @@
+// 관련 링크
+// https://wowdev.wiki/TACT
+// https://wowdev.wiki/CASC
+
+###
+# "REST Client" Extension 설치하세요.
+# 원하는 라인에 커서 위치 후 Send Request ( Ctrl + Alt + R ).
+###
+
+###
+# 테스트용
+###
+
+###
+GET http://www.google.co.kr
+
+###
+# 패치서버
+###
+
+###
+GET http://kr.patch.battle.net:1119/
+
+###
+GET http://kr.patch.battle.net:1119/wow/cdns
+
+###
+GET http://kr.patch.battle.net:1119/wow/versions
+
+
+
+
+
+
+### Build Configuration
+GET http://level3.blizzard.com/tpr/wow/config/43/b2/43b2762b8e4a57c4771a5cf9a1d99661
+
+### CDN Configuration
+GET http://level3.blizzard.com/tpr/wow/config/74/33/7433523cfc0f2145173050ef78cc79b8
+
+### Product Configuration
+GET http://level3.blizzard.com/tpr/configs/data/6d/4d/6d4dabb07d5dc9ca361cdb93b759c6de
+
+### Patch Configuration
+GET http://level3.blizzard.com/tpr/wow/patch/e6/69/e669b23ace65f1908df0a45e7a17fcfa
+
+###
+# [Versions]
+# Region|BuildConfig|CDNConfig|KeyRing|BuildId|VersionName|ProductConfig
+###
+
+###
+GET http://kr.patch.battle.net:1119/wow/versions
+
+###
+GET http://kr.patch.battle.net:1119/w3/versions
+
+###
+GET http://kr.patch.battle.net:1119/d3/versions
+
+### Diablo 4
+GET http://kr.patch.battle.net:1119/fenris/versions
+
+
+###
+# [CDNS]
+# Name|Path|Hosts|Servers|ConfigPath
+###
+
+###
+GET http://kr.patch.battle.net:1119/wow/cdns
+
+###
+GET http://kr.patch.battle.net:1119/w3/cdns
+
+### Diablo 3
+GET http://kr.patch.battle.net:1119/d3/cdns
+
+### Diablo 4
+GET http://kr.patch.battle.net:1119/fenris/cdns
+
+###
+GET http://kr.patch.battle.net:1119/catalogs/versions
+
+###
+GET http://us.patch.battle.net:1119/catalogs/versions
+
+###
+GET http://us.patch.battle.net:1119/catalogs/cdns
+
+
+
+###
+GET https://assets.8i.com/CHICAGOTEST20200629_S01_T04_20210823_131433/manifest.mpd
+
+###
+GET https://d1lf3486063qdz.cloudfront.net/class-videos/mr-youtube-tone-wop-open-and-close/mr-youtube-tone-wop-open-and-close-1080p-7500kbps.m3u8
+
+###
+GET https://d1lf3486063qdz.cloudfront.net/class-videos/mr-youtube-tone-wop-open-and-close/mr-youtube-tone-wop-open-and-close-1080p-7500kbps_00001.ts
+
+###
+GET https://d1lf3486063qdz.cloudfront.net/class-videos/mr-youtube-tone-wop-open-and-close/mr-youtube-tone-wop-open-and-close-720p-5000kbps_00001.ts
